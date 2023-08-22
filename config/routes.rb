@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'homes/update'
   get 'homes/destroy'
 Rails.application.routes.draw do
-  devise_for :users
+# devise_for :users二個書いた
 root to: "homes#top"
 end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
