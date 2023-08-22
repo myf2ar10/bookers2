@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   # 追加
   has_many :post_images, dependent: :destroy
-
+  has_many :books, dependent: :destroy
 
   has_one_attached :profile_image
 
