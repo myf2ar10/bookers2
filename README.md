@@ -1,3 +1,12 @@
+★bookers2★
+202308230359
+よくわからなかったDLした画像はカリキュラムで使う画像。meshiterro用。よって削除。
+カリキュラム見直すこと。
+
+
+
+
+
 # README
 
 This README would normally document whatever steps are necessary to get the
