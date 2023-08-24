@@ -4,7 +4,15 @@ class ApplicationController < ActionController::Base
  before_action :configure_permitted_parameters, if: :devise_controller?
 
   def after_sign_in_path_for(resource)
-    about_path
+    if about_path
+    flash[:notice] = "Signed in successfully."
+    redirect_to user_path(@user.id)
+
+    else
+    flash[:notice] = "error"
+# 何かいる？
+    render :new
+    end
   end
 
 
