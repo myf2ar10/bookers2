@@ -4,10 +4,9 @@ class ApplicationController < ActionController::Base
  before_action :configure_permitted_parameters, if: :devise_controller?
 
   def after_sign_in_path_for(resource)
-    if
-      # ifへの入れ方、サインインに成功した時の意味
+    if current_user
     flash[:notice] = "Signed in successfully."
-    redirect_to user_path(@user.id)
+    user_path(current_user.id)
 
     else
     flash[:notice] = "error"
@@ -18,7 +17,7 @@ class ApplicationController < ActionController::Base
 
 
   def after_sign_out_path_for(resource)
-    about_path
+    root_path
   end
 
 
@@ -26,8 +25,8 @@ class ApplicationController < ActionController::Base
 
   def configure_permitted_parameters
 
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:username,:email])
-
+    devise_parameter_sanitizer.permit(:sign_in, keys: [:name,:password])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name,:password])
   end
 
 # before_action :configure_permitted_parameters, if: :devise_controller?

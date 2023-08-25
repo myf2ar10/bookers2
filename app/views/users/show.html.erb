@@ -4,13 +4,28 @@
   <%= flash[:notice] %>
 </div>
 
-<h1>Show</h1>
-<h2>Show</h2>
-<h3>Show</h3>
-<h4>Show</h4>
-<h5>Show</h5>
-<h6>Show</h6>
-<!--<h7>Show</h7>-->
-<!--<h8>Show</h8>-->
-<!--<h9>Show</h9>-->
-<!--<h10>Show</h10>-->
+<h2>User info</h2>
+
+  <% if current_user.profile_image.attached? %>
+    <%= image_tag current_user.profile_image, size: "200x200" %>
+  <% else %>
+    <%= image_tag 'no_image', size: "200x200" %>
+  <% end %>
+
+<table class="table">
+  <tbody><tr></tr>
+  <tr>
+	  <th>name</th>
+	  <th><%= current_user.name %></th>
+  </tr>
+  <tr>
+	  <th>introduction</th>
+	  <th><%= current_user.introduction %></th>
+  </tr>
+</tbody></table>
+
+
+<%= link_to edit_user_path(current_user.id), class: "btn btn-outline-secondary btn-block" do %>
+  <i class="fas fa-user-cog" aria-hidden="true"></i>
+<% end %>
+

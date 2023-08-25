@@ -1,4 +1,24 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
- <h4>画像</h4>
-  <%= f.file_field :image, accept: "image/*" %>
+<!--<h1>Books#edit</h1>-->
+<!--<p>Find me in app/views/books/edit.html.erb</p>-->
+
+<%= form_with model:@user, local:true do |user| %>
+
+  <div class="field">
+    <%= user.label :name %><br>
+    <%= user.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= user.file_field :profile_image, accept: "image/*" %>
+  </div>
+
+  <div class="field">
+    <%= user.label :introduction %><br>
+    <%= user.text_area :introduction %>
+  </div>
+
+  <div class="field">
+    <%= user.submit %>
+  </div>
+
+<% end %>
