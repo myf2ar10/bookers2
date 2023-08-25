@@ -5,13 +5,14 @@ class ApplicationController < ActionController::Base
 
   def after_sign_in_path_for(resource)
     if
+      # ifへの入れ方、サインインに成功した時の意味
     flash[:notice] = "Signed in successfully."
     redirect_to user_path(@user.id)
 
     else
     flash[:notice] = "error"
 # 何かいる？
-    render :top
+    render :new
     end
   end
 
