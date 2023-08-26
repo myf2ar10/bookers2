@@ -4,13 +4,17 @@ Rails.application.routes.draw do
   # 追加
   post 'books' => 'books#create'
   get 'books/index'
-  get 'books/show'
+
   get 'books/edit'
 root to: "home#top"
   devise_for :users
-  resources :users, only: [:show, :edit, :update]
+  resources :users, only: [:index, :show, :edit, :update] do
+    resources :books, only: [:create]
+  end
+  resources :books, only: [:show]
   get 'home/about'
   get 'home/top'=>"homes#top"
+
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

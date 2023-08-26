@@ -10,9 +10,11 @@ class User < ApplicationRecord
 
   has_one_attached :profile_image
 
-  validates :profile_image, presence: true
-  validates :name, length: { in: 2..20 }
-  validates :introduction, length: { in: 1..150 }
+  # validates :name, length: { in: 2..20 } if name.present?
+  # validates :introduction, length: { in: 1..50 } if introduction.present?
+
+  validates :name, length: { in: 2..20 }, uniqueness: true
+  validates :introduction, length: { in: 1..50 }
 
   # def get_profile_image
   #   unless profile_image.attached?
