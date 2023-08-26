@@ -1,5 +1,9 @@
 ★bookers2★
 
+202308261515
+DMMメンターより
+applicationcontrollerでemail追加。他削除
+
 202308251243
 サインアップもできないEmail can't be blank
 
