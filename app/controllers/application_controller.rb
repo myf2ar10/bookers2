@@ -8,16 +8,17 @@ class ApplicationController < ActionController::Base
     flash[:notice] = "Signed in successfully."
     user_path(current_user.id)
 
-    else
-    flash[:notice] = "error"
-# 何かいる？
-    render :new
+#     else
+#     flash[:notice] = "error"
+# # 何かいる？
+#     render :new
     end
   end
 
 
   def after_sign_out_path_for(resource)
     root_path
+
   end
 
 
