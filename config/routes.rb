@@ -5,4 +5,10 @@ root to: "home#top"
   resources :books
   get 'home/about'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+# キータ参照
+devise_for :users, controllers: {   registrations: 'users/registrations',
+                                    sessions: 'users/sessions' }
+
+
 end

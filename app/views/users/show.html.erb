@@ -54,12 +54,7 @@
 <!--< % end %>-->
 
 <% @books.each do |book| %>
-<!--<td>Title</td>まちがい-->
-
   <td><%= link_to book.title, book_path(book.id) %></td>
   <td><%= book.body %></td>
-  <!--%= link_to "編集", edit_list_path(@list.id) %>見本-->
-
-
     </tr>
 <% end %>
