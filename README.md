@@ -1,5 +1,8 @@
 ★bookers2★
 
+202308271446
+チェックシート25ヘッダーに必要なリンク
+
 202308261515
 DMMメンターより
 applicationcontrollerでemail追加。他削除
