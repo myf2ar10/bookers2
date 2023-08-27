@@ -1,5 +1,11 @@
 ★bookers2★
 
+202308272039
+あとでusers/indexのviewを整えること。
+
+202308272027
+ログイン済みのヘッダーのリンク作成。views/users/index.htmlの#36form_withに異常あり。一旦コメントアウト。
+
 202308271446
 チェックシート25ヘッダーに必要なリンク
 
@@ -8,7 +14,7 @@ DMMメンターより
 applicationcontrollerでemail追加。他削除
 
 202308251243
-サインアップもできないEmail can't be blank
+サインアップもできないEmail can't be blank6
 
 202308250312
 ログインできないと進まないため持ち越し

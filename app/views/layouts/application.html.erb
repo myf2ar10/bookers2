@@ -44,9 +44,22 @@
 
 
     <% if user_signed_in? %>
-      <li>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-      </li>
+        <%= link_to root_path, class: 'nav-link text-light' do %>
+        <i class="fas fa-home"></i>
+        Home
+        <% end %>
+        <%= link_to users_path, class: 'nav-link text-light' do %>
+        <i class="fas fa-users"></i>
+        Users
+        <% end %>
+        <%= link_to books_path, class: 'nav-link text-light' do %>
+        <i class="fas fa-book-open"></i>
+        Books
+        <% end %>
+        <%= link_to new_user_session_path, class: 'nav-link text-light' do %>
+        <i class="fas fa-sign-in-alt"></i>
+        Log out
+        <% end %>
     <% else %>
         <%= link_to root_path, class: 'nav-link text-light' do %>
         <i class="fas fa-home"></i>
