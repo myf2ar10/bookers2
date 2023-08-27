@@ -21,10 +21,12 @@ class BooksController < ApplicationController
   @book = Book.new(book_params)
     if   @book.save
       flash[:notice] = "You have created book successfully."
-      redirect_to user_path(params[:user_id])
+      redirect_to book_path(@book), notice: 'Book was successfully created.' # 詳細表示画面へ
+      # redirect_to user_path(params[:user_id])
     else
       @books = Book.all
-      @user = User.find(params[:user_id])
+      @user = User.find(current_user.id)
+      # (params[:user_id])
 
       render template: "users/show"
     end
