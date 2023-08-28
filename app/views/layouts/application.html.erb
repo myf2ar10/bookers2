@@ -60,6 +60,7 @@
         <i class="fas fa-sign-in-alt"></i>
         Log out
         <% end %>
+    <%= link_to "ログアウト", root_path, method: :delete %>
     <% else %>
         <%= link_to root_path, class: 'nav-link text-light' do %>
         <i class="fas fa-home"></i>
