@@ -85,71 +85,71 @@ Userモデルのテスト
   ユーザログアウトのテスト
     ログアウト機能のテスト
 [31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 3)[0m
-[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 4)[0m
+[32m      ログアウト後のリダイレクト先が、トップになっている[0m
 
 [STEP2] ユーザログイン後のテスト
   ヘッダーのテスト: ログインしている場合
     リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。
-[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 5)[0m
+[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 4)[0m
 [32m      Usersを押すと、ユーザ一覧画面に遷移する[0m
 [32m      Booksを押すと、投稿一覧画面に遷移する[0m
   投稿一覧画面のテスト
     表示内容の確認
 [32m      URLが正しい[0m
-[31m      自分と他人の画像のリンク先が正しい (FAILED - 6)[0m
-[31m      自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい (FAILED - 7)[0m
-[31m      自分の投稿と他人の投稿のオピニオンが表示される (FAILED - 8)[0m
+[31m      自分と他人の画像のリンク先が正しい (FAILED - 5)[0m
+[31m      自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい (FAILED - 6)[0m
+[31m      自分の投稿と他人の投稿のオピニオンが表示される (FAILED - 7)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 9)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 10)[0m
-[31m      「New book」と表示される (FAILED - 11)[0m
-[31m      titleフォームが表示される (FAILED - 12)[0m
-[31m      titleフォームに値が入っていない (FAILED - 13)[0m
-[31m      bodyフォームが表示される (FAILED - 14)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 15)[0m
-[31m      Create Bookボタンが表示される (FAILED - 16)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 8)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 9)[0m
+[31m      「New book」と表示される (FAILED - 10)[0m
+[31m      titleフォームが表示される (FAILED - 11)[0m
+[31m      titleフォームに値が入っていない (FAILED - 12)[0m
+[31m      bodyフォームが表示される (FAILED - 13)[0m
+[31m      bodyフォームに値が入っていない (FAILED - 14)[0m
+[31m      Create Bookボタンが表示される (FAILED - 15)[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 17)[0m
-[31m      リダイレクト先が、保存できた投稿の詳細画面になっている (FAILED - 18)[0m
+[31m      自分の新しい投稿が正しく保存される (FAILED - 16)[0m
+[31m      リダイレクト先が、保存できた投稿の詳細画面になっている (FAILED - 17)[0m
   自分の投稿詳細画面のテスト
     表示内容の確認
 [32m      URLが正しい[0m
-[31m      「Book detail」と表示される (FAILED - 19)[0m
-[31m      ユーザ画像・名前のリンク先が正しい (FAILED - 20)[0m
+[31m      「Book detail」と表示される (FAILED - 18)[0m
+[31m      ユーザ画像・名前のリンク先が正しい (FAILED - 19)[0m
 [32m      投稿のtitleが表示される[0m
 [32m      投稿のbodyが表示される[0m
-[31m      投稿の編集リンクが表示される (FAILED - 21)[0m
-[31m      投稿の削除リンクが表示される (FAILED - 22)[0m
+[31m      投稿の編集リンクが表示される (FAILED - 20)[0m
+[31m      投稿の削除リンクが表示される (FAILED - 21)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 23)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 24)[0m
-[31m      「New book」と表示される (FAILED - 25)[0m
-[31m      titleフォームが表示される (FAILED - 26)[0m
-[31m      titleフォームに値が入っていない (FAILED - 27)[0m
-[31m      bodyフォームが表示される (FAILED - 28)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 29)[0m
-[31m      Create Bookボタンが表示される (FAILED - 30)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 22)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 23)[0m
+[31m      「New book」と表示される (FAILED - 24)[0m
+[31m      titleフォームが表示される (FAILED - 25)[0m
+[31m      titleフォームに値が入っていない (FAILED - 26)[0m
+[31m      bodyフォームが表示される (FAILED - 27)[0m
+[31m      bodyフォームに値が入っていない (FAILED - 28)[0m
+[31m      Create Bookボタンが表示される (FAILED - 29)[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 31)[0m
+[31m      自分の新しい投稿が正しく保存される (FAILED - 30)[0m
     編集リンクのテスト
-[31m      編集画面に遷移する (FAILED - 32)[0m
+[31m      編集画面に遷移する (FAILED - 31)[0m
     削除リンクのテスト
-[31m      application.html.erbにjavascript_pack_tagを含んでいる (FAILED - 33)[0m
-[31m      正しく削除される (FAILED - 34)[0m
-[31m      リダイレクト先が、投稿一覧画面になっている (FAILED - 35)[0m
+[31m      application.html.erbにjavascript_pack_tagを含んでいる (FAILED - 32)[0m
+[31m      正しく削除される (FAILED - 33)[0m
+[31m      リダイレクト先が、投稿一覧画面になっている (FAILED - 34)[0m
   自分の投稿編集画面のテスト
     表示の確認
 [32m      URLが正しい[0m
-[31m      「Editing Book」と表示される (FAILED - 36)[0m
-[31m      title編集フォームが表示される (FAILED - 37)[0m
-[31m      body編集フォームが表示される (FAILED - 38)[0m
-[31m      Update Bookボタンが表示される (FAILED - 39)[0m
-[31m      Showリンクが表示される (FAILED - 40)[0m
-[31m      Backリンクが表示される (FAILED - 41)[0m
+[31m      「Editing Book」と表示される (FAILED - 35)[0m
+[31m      title編集フォームが表示される (FAILED - 36)[0m
+[31m      body編集フォームが表示される (FAILED - 37)[0m
+[31m      Update Bookボタンが表示される (FAILED - 38)[0m
+[31m      Showリンクが表示される (FAILED - 39)[0m
+[31m      Backリンクが表示される (FAILED - 40)[0m
     編集成功のテスト
-[31m      titleが正しく更新される (FAILED - 42)[0m
-[31m      bodyが正しく更新される (FAILED - 43)[0m
-[31m      リダイレクト先が、更新した投稿の詳細画面になっている (FAILED - 44)[0m
+[31m      titleが正しく更新される (FAILED - 41)[0m
+[31m      bodyが正しく更新される (FAILED - 42)[0m
+[31m      リダイレクト先が、更新した投稿の詳細画面になっている (FAILED - 43)[0m
   ユーザ一覧画面のテスト
     表示内容の確認
 [32m      URLが正しい[0m
@@ -161,14 +161,14 @@ Userモデルのテスト
 [32m      自分のユーザ編集画面へのリンクが存在する[0m
 [32m      「New book」と表示される[0m
 [32m      titleフォームが表示される[0m
-[31m      titleフォームに値が入っていない (FAILED - 45)[0m
+[31m      titleフォームに値が入っていない (FAILED - 44)[0m
 [32m      bodyフォームが表示される[0m
-[31m      bodyフォームに値が入っていない (FAILED - 46)[0m
+[31m      bodyフォームに値が入っていない (FAILED - 45)[0m
 [32m      Create Bookボタンが表示される[0m
   自分のユーザ詳細画面のテスト
     表示の確認
 [32m      URLが正しい[0m
-[31m      投稿一覧のユーザ画像のリンク先が正しい (FAILED - 47)[0m
+[31m      投稿一覧のユーザ画像のリンク先が正しい (FAILED - 46)[0m
 [32m      投稿一覧に自分の投稿のtitleが表示され、リンクが正しい[0m
 [32m      投稿一覧に自分の投稿のbodyが表示される[0m
 [32m      他人の投稿は表示されない[0m
@@ -176,11 +176,11 @@ Userモデルのテスト
 [32m      自分の名前と紹介文が表示される[0m
 [32m      自分のユーザ編集画面へのリンクが存在する[0m
 [32m      「New book」と表示される[0m
-[31m      titleフォームが表示される (FAILED - 48)[0m
-[31m      titleフォームに値が入っていない (FAILED - 49)[0m
-[31m      bodyフォームが表示される (FAILED - 50)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 51)[0m
-[31m      Create Bookボタンが表示される (FAILED - 52)[0m
+[31m      titleフォームが表示される (FAILED - 47)[0m
+[31m      titleフォームに値が入っていない (FAILED - 48)[0m
+[31m      bodyフォームが表示される (FAILED - 49)[0m
+[31m      bodyフォームに値が入っていない (FAILED - 50)[0m
+[31m      Create Bookボタンが表示される (FAILED - 51)[0m
   自分のユーザ情報編集画面のテスト
     表示の確認
 [32m      URLが正しい[0m
@@ -195,9 +195,9 @@ Userモデルのテスト
 
 [STEP3] 仕上げのテスト
   サクセスメッセージのテスト
-[31m    ユーザ新規登録成功時 (FAILED - 53)[0m
+[31m    ユーザ新規登録成功時 (FAILED - 52)[0m
 [32m    ユーザログイン成功時[0m
-[32m    ユーザログアウト成功時[0m
+[31m    ユーザログアウト成功時 (FAILED - 53)[0m
 [32m    ユーザのプロフィール情報更新成功時[0m
 [31m    投稿データの新規投稿成功時: 投稿一覧画面から行います。 (FAILED - 54)[0m
 [31m    投稿データの更新成功時 (FAILED - 55)[0m
@@ -305,16 +305,7 @@ Failures:
      [31m  expected to find link "" with href "/home/about" but there were no matches[0m
      [36m# ./spec/system/01_before_login_spec.rb:259:in `block (4 levels) in <main>'[0m
 
-  4) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
-     [31mFailure/Error: expect(current_path).to eq '/'[0m
-     [31m[0m
-     [31m  expected: "/"[0m
-     [31m       got: "/users/1"[0m
-     [31m[0m
-     [31m  (compared using ==)[0m
-     [36m# ./spec/system/01_before_login_spec.rb:262:in `block (4 levels) in <main>'[0m
-
-  5) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
+  4) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
      [31mFailure/Error: is_expected.to eq '/users/' + user.id.to_s[0m
      [31m[0m
      [31m  expected: "/users/1"[0m
@@ -323,42 +314,42 @@ Failures:
      [31m  (compared using ==)[0m
      [36m# ./spec/system/02_after_login_spec.rb:24:in `block (4 levels) in <main>'[0m
 
-  6) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
+  5) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
      [31mFailure/Error: expect(page).to have_link '', href: user_path(book.user)[0m
      [31m  expected to find link "" with href "/users/1" but there were no matches[0m
      [36m# ./spec/system/02_after_login_spec.rb:51:in `block (4 levels) in <main>'[0m
 
-  7) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
+  6) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
      [31mFailure/Error: expect(page).to have_link book.title, href: book_path(book)[0m
-     [31m  expected to find link "4qqz0" with href "/books/1" but there were no matches[0m
+     [31m  expected to find link "vwo27" with href "/books/1" but there were no matches[0m
      [36m# ./spec/system/02_after_login_spec.rb:55:in `block (4 levels) in <main>'[0m
 
-  8) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のオピニオンが表示される
+  7) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のオピニオンが表示される
      [31mFailure/Error: expect(page).to have_content book.body[0m
-     [31m  expected to find text "90rpkq9xm84wt7oq35da" in "Bookers\nHome Users Books Log out\nBooks#index\nFind me in app/views/books/index.html.erb\nCopyRight Infratop.inc"[0m
+     [31m  expected to find text "wav18qmqbfannq4nrojn" in "Bookers\nHome Users Books Log out\nBooks#index\nFind me in app/views/books/index.html.erb\nCopyRight Infratop.inc"[0m
      [36m# ./spec/system/02_after_login_spec.rb:59:in `block (4 levels) in <main>'[0m
 
-  9) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  8) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
      [31mFailure/Error: expect(page).to have_content user.name[0m
-     [31m  expected to find text "myasy1mq7f" in "Bookers\nHome Users Books Log out\nBooks#index\nFind me in app/views/books/index.html.erb\nCopyRight Infratop.inc"[0m
+     [31m  expected to find text "05qdl7ibzl" in "Bookers\nHome Users Books Log out\nBooks#index\nFind me in app/views/books/index.html.erb\nCopyRight Infratop.inc"[0m
      [36m# ./spec/system/02_after_login_spec.rb:66:in `block (4 levels) in <main>'[0m
 
-  10) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
-      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(user)[0m
-      [31m  expected to find link "" with href "/users/1/edit" but there were no matches[0m
-      [36m# ./spec/system/02_after_login_spec.rb:70:in `block (4 levels) in <main>'[0m
+  9) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+     [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(user)[0m
+     [31m  expected to find link "" with href "/users/1/edit" but there were no matches[0m
+     [36m# ./spec/system/02_after_login_spec.rb:70:in `block (4 levels) in <main>'[0m
 
-  11) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
+  10) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
       [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nBooks#index\nFind me in app/views/books/index.html.erb\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:73:in `block (4 levels) in <main>'[0m
 
-  12) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームが表示される
+  11) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: expect(page).to have_field 'book[title]'[0m
       [31m  expected to find field "book[title]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:76:in `block (4 levels) in <main>'[0m
 
-  13) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  12) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: expect(find_field('book[title]').text).to be_blank[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -373,12 +364,12 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `find_field'[0m
       [36m# ./spec/system/02_after_login_spec.rb:79:in `block (4 levels) in <main>'[0m
 
-  14) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームが表示される
+  13) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームが表示される
       [31mFailure/Error: expect(page).to have_field 'book[body]'[0m
       [31m  expected to find field "book[body]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:82:in `block (4 levels) in <main>'[0m
 
-  15) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
+  14) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
       [31mFailure/Error: expect(find_field('book[body]').text).to be_blank[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -393,12 +384,12 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `find_field'[0m
       [36m# ./spec/system/02_after_login_spec.rb:85:in `block (4 levels) in <main>'[0m
 
-  16) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  15) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: expect(page).to have_button 'Create Book'[0m
       [31m  expected to find button "Create Book" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:88:in `block (4 levels) in <main>'[0m
 
-  17) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
+  16) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number: 5)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -413,7 +404,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
       [36m# ./spec/system/02_after_login_spec.rb:94:in `block (4 levels) in <main>'[0m
 
-  18) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
+  17) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number: 5)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -428,47 +419,47 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
       [36m# ./spec/system/02_after_login_spec.rb:94:in `block (4 levels) in <main>'[0m
 
-  19) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
+  18) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
       [31mFailure/Error: expect(page).to have_content 'Book detail'[0m
-      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out\nTitle: gsk1i\nBody: 4rnqwyjhzchyen381lyz\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out\nTitle: 8znek\nBody: jno7bcj6wk2mdfxjrvtj\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:118:in `block (4 levels) in <main>'[0m
 
-  20) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
+  19) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link book.user.name, href: user_path(book.user)[0m
-      [31m  expected to find link "vqkwtikv66" with href "/users/1" but there were no matches[0m
+      [31m  expected to find link "oefeu88khe" with href "/users/1" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:121:in `block (4 levels) in <main>'[0m
 
-  21) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
+  20) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
       [31mFailure/Error: expect(page).to have_link 'Edit', href: edit_book_path(book)[0m
       [31m  expected to find link "Edit" with href "/books/1/edit" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:130:in `block (4 levels) in <main>'[0m
 
-  22) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される
+  21) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される
       [31mFailure/Error: expect(page).to have_link 'Destroy', href: book_path(book)[0m
       [31m  expected to find link "Destroy" with href "/books/1" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:133:in `block (4 levels) in <main>'[0m
 
-  23) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  22) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content user.name[0m
-      [31m  expected to find text "ni021jxur0" in "Bookers\nHome Users Books Log out\nTitle: 8cp08\nBody: e3pi3i1vsrnfhndhwy0m\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "9j3fg42h3q" in "Bookers\nHome Users Books Log out\nTitle: mytlq\nBody: 5m8ug4lw8updkz2den0o\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:139:in `block (4 levels) in <main>'[0m
 
-  24) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+  23) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(user)[0m
       [31m  expected to find link "" with href "/users/1/edit" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:143:in `block (4 levels) in <main>'[0m
 
-  25) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
+  24) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nTitle: jwc7l\nBody: 73un2ryu4r42ayz2usoc\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nTitle: 44xir\nBody: a0sfc2rpxbvnk7ii3l8s\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:146:in `block (4 levels) in <main>'[0m
 
-  26) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
+  25) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: expect(page).to have_field 'book[title]'[0m
       [31m  expected to find field "book[title]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:149:in `block (4 levels) in <main>'[0m
 
-  27) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  26) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: expect(find_field('book[title]').text).to be_blank[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -483,12 +474,12 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `find_field'[0m
       [36m# ./spec/system/02_after_login_spec.rb:152:in `block (4 levels) in <main>'[0m
 
-  28) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームが表示される
+  27) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームが表示される
       [31mFailure/Error: expect(page).to have_field 'book[body]'[0m
       [31m  expected to find field "book[body]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:155:in `block (4 levels) in <main>'[0m
 
-  29) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
+  28) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
       [31mFailure/Error: expect(find_field('book[body]').text).to be_blank[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -503,12 +494,12 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `find_field'[0m
       [36m# ./spec/system/02_after_login_spec.rb:158:in `block (4 levels) in <main>'[0m
 
-  30) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  29) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: expect(page).to have_button 'Create Book'[0m
       [31m  expected to find button "Create Book" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:161:in `block (4 levels) in <main>'[0m
 
-  31) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
+  30) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number: 5)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -523,7 +514,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
       [36m# ./spec/system/02_after_login_spec.rb:167:in `block (4 levels) in <main>'[0m
 
-  32) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 編集リンクのテスト 編集画面に遷移する
+  31) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 編集リンクのテスト 編集画面に遷移する
       [31mFailure/Error: click_link 'Edit'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -538,7 +529,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_link'[0m
       [36m# ./spec/system/02_after_login_spec.rb:183:in `block (4 levels) in <main>'[0m
 
-  33) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト application.html.erbにjavascript_pack_tagを含んでいる
+  32) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト application.html.erbにjavascript_pack_tagを含んでいる
       [31mFailure/Error: click_link 'Destroy'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -553,7 +544,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_link'[0m
       [36m# ./spec/system/02_after_login_spec.rb:201:in `block (4 levels) in <main>'[0m
 
-  34) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される
+  33) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される
       [31mFailure/Error: click_link 'Destroy'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -568,7 +559,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_link'[0m
       [36m# ./spec/system/02_after_login_spec.rb:201:in `block (4 levels) in <main>'[0m
 
-  35) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている
+  34) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている
       [31mFailure/Error: click_link 'Destroy'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -583,37 +574,37 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_link'[0m
       [36m# ./spec/system/02_after_login_spec.rb:201:in `block (4 levels) in <main>'[0m
 
-  36) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される
+  35) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される
       [31mFailure/Error: expect(page).to have_content 'Editing Book'[0m
       [31m  expected to find text "Editing Book" in "Bookers\nHome Users Books Log out\nbook edit\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:222:in `block (4 levels) in <main>'[0m
 
-  37) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される
+  36) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される
       [31mFailure/Error: expect(page).to have_field 'book[title]', with: book.title[0m
       [31m  expected to find field "book[title]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:225:in `block (4 levels) in <main>'[0m
 
-  38) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 body編集フォームが表示される
+  37) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 body編集フォームが表示される
       [31mFailure/Error: expect(page).to have_field 'book[body]', with: book.body[0m
       [31m  expected to find field "book[body]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:228:in `block (4 levels) in <main>'[0m
 
-  39) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Update Bookボタンが表示される
+  38) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Update Bookボタンが表示される
       [31mFailure/Error: expect(page).to have_button 'Update Book'[0m
       [31m  expected to find button "Update Book" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:231:in `block (4 levels) in <main>'[0m
 
-  40) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Showリンクが表示される
+  39) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Showリンクが表示される
       [31mFailure/Error: expect(page).to have_link 'Show', href: book_path(book)[0m
       [31m  expected to find link "Show" with href "/books/1" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:234:in `block (4 levels) in <main>'[0m
 
-  41) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Backリンクが表示される
+  40) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Backリンクが表示される
       [31mFailure/Error: expect(page).to have_link 'Back', href: books_path[0m
       [31m  expected to find link "Back" with href "/books" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:237:in `block (4 levels) in <main>'[0m
 
-  42) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト titleが正しく更新される
+  41) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト titleが正しく更新される
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number: 4)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -628,7 +619,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
       [36m# ./spec/system/02_after_login_spec.rb:245:in `block (4 levels) in <main>'[0m
 
-  43) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト bodyが正しく更新される
+  42) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト bodyが正しく更新される
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number: 4)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -643,7 +634,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
       [36m# ./spec/system/02_after_login_spec.rb:245:in `block (4 levels) in <main>'[0m
 
-  44) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト リダイレクト先が、更新した投稿の詳細画面になっている
+  43) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト リダイレクト先が、更新した投稿の詳細画面になっている
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number: 4)[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -658,7 +649,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
       [36m# ./spec/system/02_after_login_spec.rb:245:in `block (4 levels) in <main>'[0m
 
-  45) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  44) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: expect(find_field('book[title]').text).to be_blank[0m
       [31m[0m
       [31mCapybara::Ambiguous:[0m
@@ -673,7 +664,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `find_field'[0m
       [36m# ./spec/system/02_after_login_spec.rb:300:in `block (4 levels) in <main>'[0m
 
-  46) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
+  45) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
       [31mFailure/Error: expect(find_field('book[body]').text).to be_blank[0m
       [31m[0m
       [31mCapybara::Ambiguous:[0m
@@ -688,17 +679,17 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `find_field'[0m
       [36m# ./spec/system/02_after_login_spec.rb:306:in `block (4 levels) in <main>'[0m
 
-  47) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
+  46) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link '', href: user_path(user)[0m
       [31m  expected to find link "" with href "/users/1" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:324:in `block (4 levels) in <main>'[0m
 
-  48) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームが表示される
+  47) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: expect(page).to have_field 'book[title]'[0m
       [31m  expected to find field "book[title]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:351:in `block (4 levels) in <main>'[0m
 
-  49) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  48) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: expect(find_field('book[title]').text).to be_blank[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -713,12 +704,12 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `find_field'[0m
       [36m# ./spec/system/02_after_login_spec.rb:354:in `block (4 levels) in <main>'[0m
 
-  50) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームが表示される
+  49) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームが表示される
       [31mFailure/Error: expect(page).to have_field 'book[body]'[0m
       [31m  expected to find field "book[body]" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:357:in `block (4 levels) in <main>'[0m
 
-  51) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
+  50) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
       [31mFailure/Error: expect(find_field('book[body]').text).to be_blank[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -733,15 +724,20 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `find_field'[0m
       [36m# ./spec/system/02_after_login_spec.rb:360:in `block (4 levels) in <main>'[0m
 
-  52) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  51) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: expect(page).to have_button 'Create Book'[0m
       [31m  expected to find button "Create Book" that is not disabled but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:363:in `block (4 levels) in <main>'[0m
 
-  53) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時
+  52) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時
       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
       [31m  expected to find text "successfully" in "Bookers\nHome About Sign up Log in\nSign up\n1 error prohibited this user from being saved:\nIntroduction is too short (minimum is 1 character)\nName\nEmail\nPassword (6 characters minimum)\nPassword confirmation\nLog in\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:19:in `block (3 levels) in <main>'[0m
+
+  53) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
+      [31mFailure/Error: is_expected.to have_content 'successfully'[0m
+      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nBookers2Ver2\nwelcome to Bookers !!\nIn Bookers,\nyou can share and exchange your opinions , inpressions , and emotions\nabout various books!\nLog in\nSign up\nCopyRight Infratop.inc"[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:36:in `block (3 levels) in <main>'[0m
 
   54) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。
       [31mFailure/Error: fill_in 'book[title]', with: Faker::Lorem.characters(number: 5)[0m
@@ -778,7 +774,7 @@ Failures:
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `errors' for nil:NilClass[0m
-      [36m# ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb__4111011194197227694_24320'[0m
+      [36m# ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb___3426278975450463547_24320'[0m
       [36m# ./app/controllers/users_controller.rb:43:in `update'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
@@ -826,14 +822,14 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `errors' for nil:NilClass[0m
-      [36m#   ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb__4111011194197227694_24320'[0m
+      [36m#   ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb___3426278975450463547_24320'[0m
 
   57) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
       [31mFailure/Error: <% if @book.errors.any? %>[0m
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `errors' for nil:NilClass[0m
-      [36m# ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb__4111011194197227694_24320'[0m
+      [36m# ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb___3426278975450463547_24320'[0m
       [36m# ./app/controllers/users_controller.rb:43:in `update'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
@@ -881,14 +877,14 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `errors' for nil:NilClass[0m
-      [36m#   ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb__4111011194197227694_24320'[0m
+      [36m#   ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb___3426278975450463547_24320'[0m
 
   58) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
       [31mFailure/Error: <% if @book.errors.any? %>[0m
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `errors' for nil:NilClass[0m
-      [36m# ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb__4111011194197227694_24320'[0m
+      [36m# ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb___3426278975450463547_24320'[0m
       [36m# ./app/controllers/users_controller.rb:43:in `update'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
@@ -936,7 +932,7 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `errors' for nil:NilClass[0m
-      [36m#   ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb__4111011194197227694_24320'[0m
+      [36m#   ./app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb___3426278975450463547_24320'[0m
 
   59) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿が保存されない
       [31mFailure/Error: fill_in 'book[body]', with: @body[0m
@@ -1048,7 +1044,7 @@ Failures:
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `profile_image' for nil:NilClass[0m
-      [36m# ./app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___1625692875373957461_26300'[0m
+      [36m# ./app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb__672272586066914871_26260'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1086,7 +1082,7 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `profile_image' for nil:NilClass[0m
-      [36m#   ./app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___1625692875373957461_26300'[0m
+      [36m#   ./app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb__672272586066914871_26260'[0m
 
   67) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ詳細画面
       [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
@@ -1135,17 +1131,17 @@ Failures:
 
   72) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
       [31mFailure/Error: expect(page).to have_content 'Book detail'[0m
-      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out\nTitle: teqw9\nBody: s7lmy8kjg8albwx805y9\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out\nTitle: 99aby\nBody: ybr5ec0lmmzix9sw94p7\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:223:in `block (5 levels) in <main>'[0m
 
   73) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link other_book.user.name, href: user_path(other_book.user)[0m
-      [31m  expected to find link "khsj7yrclc" with href "/users/2" but there were no matches[0m
+      [31m  expected to find link "zlj3oh3im3" with href "/users/2" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:226:in `block (5 levels) in <main>'[0m
 
   74) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content other_user.name[0m
-      [31m  expected to find text "4835acduyt" in "Bookers\nHome Users Books Log out\nTitle: k6we2\nBody: 3ihi6e6hhby0v4kdhbrd\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "he4qvficei" in "Bookers\nHome Users Books Log out\nTitle: xw0tq\nBody: 5lisotz9prqeivghg550\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:244:in `block (5 levels) in <main>'[0m
 
   75) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
@@ -1211,7 +1207,7 @@ Failures:
       [31m  expected to find css ".fa-solid.fa-user-cog, .fas.fa-user-cog" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:449:in `block (4 levels) in <main>'[0m
 
-Finished in 18.65 seconds (files took 2.92 seconds to load)
+Finished in 18.52 seconds (files took 1.35 seconds to load)
 [31m199 examples, 85 failures[0m
 
 Failed examples:
@@ -1219,7 +1215,6 @@ Failed examples:
 [31mrspec ./spec/system/01_before_login_spec.rb:147[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 正しく新規登録される[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:150[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:258[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:261[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:20[0m [36m# [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:50[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:54[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい[0m
@@ -1269,6 +1264,7 @@ Failed examples:
 [31mrspec ./spec/system/02_after_login_spec.rb:359[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:362[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:12[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時[0m
+[31mrspec ./spec/system/03_finishing_touches_spec.rb:28[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:47[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:58[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:109[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする 更新されない[0m
