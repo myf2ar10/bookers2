@@ -321,17 +321,17 @@ Failures:
 
   6) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
      [31mFailure/Error: expect(page).to have_link book.title, href: book_path(book)[0m
-     [31m  expected to find link "46unl" with href "/books/1" but there were no matches[0m
+     [31m  expected to find link "47msw" with href "/books/1" but there were no matches[0m
      [36m# ./spec/system/02_after_login_spec.rb:55:in `block (4 levels) in <main>'[0m
 
   7) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のオピニオンが表示される
      [31mFailure/Error: expect(page).to have_content book.body[0m
-     [31m  expected to find text "d4omqw5my3ma402ijq55" in "Bookers\nHome Users Books Log out ログアウト\nBooks#index\nFind me in app/views/books/index.html.erb\nCopyRight Infratop.inc"[0m
+     [31m  expected to find text "y1sct6f5fd6up9zfkb6n" in "Bookers\nHome Users Books Log out ログアウト\nBooks#index\nFind me in app/views/books/index.html.erb\nCopyRight Infratop.inc"[0m
      [36m# ./spec/system/02_after_login_spec.rb:59:in `block (4 levels) in <main>'[0m
 
   8) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
      [31mFailure/Error: expect(page).to have_content user.name[0m
-     [31m  expected to find text "931fn83cdd" in "Bookers\nHome Users Books Log out ログアウト\nBooks#index\nFind me in app/views/books/index.html.erb\nCopyRight Infratop.inc"[0m
+     [31m  expected to find text "laset17qc7" in "Bookers\nHome Users Books Log out ログアウト\nBooks#index\nFind me in app/views/books/index.html.erb\nCopyRight Infratop.inc"[0m
      [36m# ./spec/system/02_after_login_spec.rb:66:in `block (4 levels) in <main>'[0m
 
   9) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
@@ -421,12 +421,12 @@ Failures:
 
   18) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
       [31mFailure/Error: expect(page).to have_content 'Book detail'[0m
-      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out ログアウト\nTitle: gyeyz\nBody: 8jqwbmodmz7mlazk9rig\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out ログアウト\nTitle: 8nr3h\nBody: jb2pmxhhovrfxthniebh\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:118:in `block (4 levels) in <main>'[0m
 
   19) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link book.user.name, href: user_path(book.user)[0m
-      [31m  expected to find link "e5ph1d58j1" with href "/users/1" but there were no matches[0m
+      [31m  expected to find link "fnd1ivxzbv" with href "/users/1" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:121:in `block (4 levels) in <main>'[0m
 
   20) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
@@ -441,7 +441,7 @@ Failures:
 
   22) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content user.name[0m
-      [31m  expected to find text "zn700pu0oz" in "Bookers\nHome Users Books Log out ログアウト\nTitle: oyno8\nBody: 8qw6cpkoasjztnbgm4p0\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "azkowtl6ev" in "Bookers\nHome Users Books Log out ログアウト\nTitle: ghb4a\nBody: xz6a96i2c61czpsm5e5v\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:139:in `block (4 levels) in <main>'[0m
 
   23) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
@@ -451,7 +451,7 @@ Failures:
 
   24) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out ログアウト\nTitle: 689pz\nBody: 5dznhwqsinw9piuwtmug\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out ログアウト\nTitle: 2ytgb\nBody: hcx1drz7oj1sa10ke632\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:146:in `block (4 levels) in <main>'[0m
 
   25) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
@@ -651,7 +651,7 @@ Failures:
 
   44) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out ログアウト\nUser info\nname rlppcq8ow8 introduction 6emmj3mgq77ifqunrkxo\nTitle Opinion\nrlppcq8ow8 Show\nUsers\nimage name\nrw737z2eax Show\nUsers\nimage name\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out ログアウト\nUser info\nname atbybqzzoa introduction 1k4n19ynx322btnfnbdf\nTitle Opinion\natbybqzzoa Show\nUsers\nimage name\nam2789lvbe Show\nUsers\nimage name\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:294:in `block (4 levels) in <main>'[0m
 
   45) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
@@ -749,7 +749,7 @@ Failures:
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `errors' for nil:NilClass[0m
-      [36m# ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___3925401042842739294_24360'[0m
+      [36m# ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___4325333167040247173_24340'[0m
       [36m# ./app/controllers/users_controller.rb:43:in `update'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
@@ -797,14 +797,14 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `errors' for nil:NilClass[0m
-      [36m#   ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___3925401042842739294_24360'[0m
+      [36m#   ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___4325333167040247173_24340'[0m
 
   56) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
       [31mFailure/Error: <% if @book.errors.any? %>[0m
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `errors' for nil:NilClass[0m
-      [36m# ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___3925401042842739294_24360'[0m
+      [36m# ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___4325333167040247173_24340'[0m
       [36m# ./app/controllers/users_controller.rb:43:in `update'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
@@ -852,14 +852,14 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `errors' for nil:NilClass[0m
-      [36m#   ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___3925401042842739294_24360'[0m
+      [36m#   ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___4325333167040247173_24340'[0m
 
   57) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
       [31mFailure/Error: <% if @book.errors.any? %>[0m
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `errors' for nil:NilClass[0m
-      [36m# ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___3925401042842739294_24360'[0m
+      [36m# ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___4325333167040247173_24340'[0m
       [36m# ./app/controllers/users_controller.rb:43:in `update'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
@@ -907,7 +907,7 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `errors' for nil:NilClass[0m
-      [36m#   ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___3925401042842739294_24360'[0m
+      [36m#   ./app/views/users/show.html.erb:12:in `_app_views_users_show_html_erb___4325333167040247173_24340'[0m
 
   58) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿が保存されない
       [31mFailure/Error: fill_in 'book[body]', with: @body[0m
@@ -1019,7 +1019,7 @@ Failures:
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `profile_image' for nil:NilClass[0m
-      [36m# ./app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb___2104517897604747103_26320'[0m
+      [36m# ./app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb___3497438500873716534_26280'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -1057,7 +1057,7 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `profile_image' for nil:NilClass[0m
-      [36m#   ./app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb___2104517897604747103_26320'[0m
+      [36m#   ./app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb___3497438500873716534_26280'[0m
 
   66) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ詳細画面
       [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
@@ -1106,17 +1106,17 @@ Failures:
 
   71) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
       [31mFailure/Error: expect(page).to have_content 'Book detail'[0m
-      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out ログアウト\nTitle: 7i36j\nBody: yjj1j6lyma0nlnubgnkn\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out ログアウト\nTitle: dqwt3\nBody: fglj4puez5nx07303p3x\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:223:in `block (5 levels) in <main>'[0m
 
   72) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link other_book.user.name, href: user_path(other_book.user)[0m
-      [31m  expected to find link "9x7mo23rcr" with href "/users/2" but there were no matches[0m
+      [31m  expected to find link "g5fs22qtow" with href "/users/2" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:226:in `block (5 levels) in <main>'[0m
 
   73) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content other_user.name[0m
-      [31m  expected to find text "52ynxs2q5q" in "Bookers\nHome Users Books Log out ログアウト\nTitle: koem1\nBody: gr9ohizeyoae6320t8dl\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "l4sl4ki3oj" in "Bookers\nHome Users Books Log out ログアウト\nTitle: no6o2\nBody: bgh35v3t5thefewrf5jz\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:244:in `block (5 levels) in <main>'[0m
 
   74) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
@@ -1182,7 +1182,7 @@ Failures:
       [31m  expected to find css ".fa-solid.fa-user-cog, .fas.fa-user-cog" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:449:in `block (4 levels) in <main>'[0m
 
-Finished in 21.77 seconds (files took 2.83 seconds to load)
+Finished in 33.78 seconds (files took 3.11 seconds to load)
 [31m199 examples, 84 failures[0m
 
 Failed examples:
