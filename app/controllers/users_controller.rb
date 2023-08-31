@@ -24,7 +24,7 @@ class UsersController < ApplicationController
   def create
     @user = current_user
     if @user.save
-      redirect_too user_path(@user_params)
+      redirect_to user_path(@user_params)
     else
       render :new
     end
