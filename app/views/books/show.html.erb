@@ -21,15 +21,19 @@
   <div class="row">
     <div class="col-md-3">
       <h2>User info</h2>
-      <img src="https://bookers-level2.herokuapp.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL3VNQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d02670d4752e93a106178108e9c3960623bed066/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVdscGFRPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--4a929dbc7794f3c4610ba9ba5402762ad9cd1a14/default-image.jpg"><table class="table">
+      <% if @user.profile_image.attached? %>
+        <%= image_tag @user.profile_image, size: "200x200" %>
+      <% else %>
+        <%= image_tag 'no_image', size: "200x200" %>
+      <% end %>
   <tbody><tr></tr>
   <tr>
-	  <th>name</th>
-	  <th><%= @user %></th>	  <!--わからなくなったためストップ-->
+      <th>name</th>
+      <th><%= @user.name %></th>
   </tr>
   <tr>
 	  <th>introduction</th>
-	  <th></th>
+	  <th><%= @user.introduction %></th>
   </tr>
 </tbody></table>
 
@@ -60,10 +64,11 @@
             <img src="https://bookers-level2.herokuapp.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL3VNQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d02670d4752e93a106178108e9c3960623bed066/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVdscGFRPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--4a929dbc7794f3c4610ba9ba5402762ad9cd1a14/default-image.jpg"><br>
             11
 </a>          </td>
-          <td><a href="/books/99677">ああ</a></td>
-          <td>ああ</td>
-            <td><a class="btn btn-sm btn-success edit_book_99677" href="/books/99677/edit">Edit</a></td>
-            <td><a data-confirm="本当に消しますか？" class="btn btn-sm btn-danger destroy_book_99677" rel="nofollow" data-method="delete" href="/books/99677">Destroy</a></td>
+          <td><%= link_to @book.title, book_path(@book) %></td>
+          <td><%= @book.body %></td>
+            <td><%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-sm btn-success' %></td>
+            <td><%= link_to 'Destroy', book_path(@book), method: :delete, data: { confirm: '本当に消しますか？' }, class: "btn btn-sm btn-danger" %></td>
+            <!--<a data-confirm="本当に消しますか？" class="btn btn-sm btn-danger destroy_book_99677" rel="nofollow" data-method="delete" href="/books/99677">Destroy</a></td>-->
         </tr>
       </tbody></table>
     </div>
