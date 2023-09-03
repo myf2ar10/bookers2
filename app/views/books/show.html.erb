@@ -67,8 +67,16 @@
 </a>          </td>
           <td><%= link_to @book.title, book_path(@book) %></td>
           <td><%= @book.body %></td>
-            <td><%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-sm btn-success' %></td>
-            <td><%= link_to 'Destroy', book_path(@book), method: :delete, data: { confirm: '本当に消しますか？' }, class: "btn btn-sm btn-danger" %></td>
+            <td>
+              <% if current_user %>
+                <%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-sm btn-success' %>
+              <% end %>
+            </td>
+            <td>
+              <% if current_user %>
+                <%= link_to 'Destroy', book_path(@book), method: :delete, data: { confirm: '本当に消しますか？' }, class: "btn btn-sm btn-danger" %>
+              <% end %>
+            </td>
             <!--<a data-confirm="本当に消しますか？" class="btn btn-sm btn-danger destroy_book_99677" rel="nofollow" data-method="delete" href="/books/99677">Destroy</a></td>-->
         </tr>
       </tbody></table>
