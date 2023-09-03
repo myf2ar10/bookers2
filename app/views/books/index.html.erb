@@ -1,2 +1,122 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<!--<h1>Books#index</h1>-->
+<!--<p>Find me in app/views/books/index.html.erb</p>-->
+
+
+<p id="notice"></p>
+<div class="container px-5 px-sm-0">
+  <div class="row">
+    <div class="col-md-3">
+<h2>User info</h2>
+  <%= image_tag @user.get_profile_image(100,100) %>
+<table class="table">
+  <tbody>
+  <tr>
+	  <th>name</th>
+	  <th><%= @user.name %></th>
+  </tr>
+  <tr>
+	  <th>introduction</th>
+	  <th><%= @user.introduction %></th>
+  </tr>
+  </tbody>
+</table>
+<%= link_to edit_user_path(@user.id), class: "btn btn-outline-secondary btn-block" do %>
+  <i class="fas fa-user-cog" aria-hidden="true"></i>
+<% end %>
+
+<!--<h1>New book</h1>-->
+<!--<div class="form-group">-->
+<!--    <label for="book_title">Title</label>-->
+<!--    <input class="form-control book_title" type="text" name="book[title]" id="book_title">-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label for="book_opinion">Opinion</label>-->
+<!--    <textarea class="form-control book_body" name="book[body]" id="book_body"></textarea>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book">-->
+<!--  </div>-->
+	  <h2>New book</h2>
+<%= form_with model: @book, url: books_path(@user.id), method: :post do |f| %>
+  <!--<　%= form_with model: Book.new do |f| %>-->
+  <!--<h4>Title</h4>-->
+  <label for="book_title">Title</label><br>
+  <%= f.text_field :title %><br>
+
+  <!--<h4>Opinion</h4>-->
+  <label for="book_opinion">Opinion</label><br>
+  <%= f.text_area :body %><br>
+  <!--< %= f.submit 'Create Book' %><br>-->
+  <input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book">
+<% end %>
+
+
+
+<!--< % @users.each do |user| %>-->
+<!--< % if user.profile_image.attached? %>-->
+<!--    < %= image_tag user.profile_image, size: "200x200" %>-->
+<!--  < % else %>-->
+<!--    < %= image_tag 'no_image', size: "200x200" %>-->
+<!--  < % end %>-->
+
+<!--<td>< %= user.name %></td>-->
+
+<!--  <td>< %= link_to "Show", user_path(user.id) %></td><br>-->
+
+<!--<div class="col-md-8 offset-md-1">-->
+<!--      <h2>Users</h2>-->
+<!--      <table class="table">-->
+<!--  <thead>-->
+<!--    <tr>-->
+<!--<th>image</th>-->
+<!--<th>name</th>-->
+<!--<th colspan="3">-->
+<!--</th>-->
+<!--</tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--      <tr>-->
+<!--        <td></td>-->
+<!--      </tr>-->
+<!--    </tbody>-->
+<!--  </table>-->
+<!--</div>-->
+<!--< % end %>-->
+
+<h2>Books</h2>
+<table class="table table-hover table-inverse">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Opinion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="/users/130854">
+          <img src="aaaaaaaaaaaaa">
+        </a>
+      </td>
+      <td><a class="book_99973" href="/books/99973">リーダブルコード</a></td>
+      <td>より良いコードを書くためのシンプルで実践的なテクニック。</td>
+    </tr>
+    <tr>
+      <td><a href="/users/130855">
+        <img src="aaaaaaaaaa">
+          </a>
+      </td>
+      <td><a class="book_99974" href="/books/99974">トラブル知らずのシステム設計</a></td>
+      <td>システム設計の要点を図解で説明してくれます。</td>
+    </tr>
+    <tr>
+      <td><a href="/users/130856">
+        <img src="sssssssssssss">
+          </a>
+      </td>
+      <td><a class="book_99975" href="/books/99975">たのしいRuby</a></td>
+      <td>Rubyの入門におすすめです。</td>
+    </tr>
+  </tbody>
+</table>
