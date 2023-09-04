@@ -18,6 +18,7 @@ class BooksController < ApplicationController
   end
 
   def edit
+  is_matching_login_user
   end
 
   def create
@@ -47,6 +48,13 @@ class BooksController < ApplicationController
 
   def book_params
     params.permit(:title, :body, :user_id)
+  end
+
+  def is_matching_login_user
+    user = User.find(params[:id])
+    unless user.id == current_user.id
+      redirect_to user_path(current_user.id)    # 自分で
+    end
   end
 
 end
