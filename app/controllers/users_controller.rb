@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   @user = User.find(params[:id])
   @book = Book.new
   @books = @user.books
+  @users = User.all
   end
 
 
@@ -36,7 +37,7 @@ class UsersController < ApplicationController
     p params
     p user_params
     if @user.update(user_params)
-      flash[:notice] = "User was successfully updated."
+      flash[:notice] = "You have updated user successfully."
       redirect_to user_path(@user.id)
     else
       flash[:notice] = "error."
