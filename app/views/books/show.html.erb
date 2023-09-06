@@ -1,7 +1,9 @@
 <!--<h1>Books#show</h1>-->
 <!--<p>Find me in app/views/books/show.html.erb</p>-->
-<p id="notice"></p>
-    <%= flash[:notice] %><!--みてもらう-->
+<!--<p id="notice"></p>-->
+<div>
+  <%= flash[:notice] %>
+</div><!--みてもらう-->
 
 
 <!--<p>-->
@@ -64,7 +66,8 @@
       <div class="col-md-8 offset-md-1">
   		  <h2>Book detail</h2>
   		    <table class="table">
-  		      <tbody><tr>
+  		      <tbody>
+  		        <tr>
               <td>
                 <a href="/users/130491"></a>
                 <% if @user.profile_image.attached? %>
@@ -85,6 +88,7 @@
                   <%= link_to 'Destroy', book_path(@book), method: :delete, data: { confirm: '本当に消しますか？' }, class: "btn btn-sm btn-danger" %>
                 <% end %>
               </td>
+              </tr>
             </tbody>
           </table>
         </div>

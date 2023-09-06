@@ -22,6 +22,7 @@ class BooksController < ApplicationController
   end
 
   def create
+
   p params
   @book = Book.new(book_params)
     if   @book.save
@@ -38,7 +39,14 @@ class BooksController < ApplicationController
 
 # 自分で
   def update
+    if   @book.save
+      flash[:notice] = "You have created book successfully."
     redirect_to books_path
+    else
+      @books = Book.all
+      @user = User.find(current_user.id)
+      render template: "users/show"
+    end
   end
 
   def destroy
