@@ -10,11 +10,13 @@ class BooksController < ApplicationController
     @book = Book.new
     @user = current_user
     @users = User.all
+    @books = Book.all
   end
 
   def show
   @book = Book.find(params[:id])
   @user = @book.user
+  @book_new = Book.new
   end
 
   def edit
@@ -22,13 +24,11 @@ class BooksController < ApplicationController
   end
 
   def create
-
-  p params
   @book = Book.new(book_params)
-    if   @book.save
+  @book.user_id = current_user.id
+    if @book.save
       flash[:notice] = "You have created book successfully."
-      redirect_to book_path(@book), notice: 'Book was successfully created.' # 詳細表示画面へ
-      # redirect_to user_path(params[:user_id])
+      redirect_to book_path(@book)
     else
       @books = Book.all
       @user = User.find(current_user.id)
@@ -39,7 +39,7 @@ class BooksController < ApplicationController
 
 # 自分で
   def update
-    if   @book.save
+    if @book.save
       flash[:notice] = "You have created book successfully."
     redirect_to books_path
     else
@@ -58,7 +58,7 @@ class BooksController < ApplicationController
     private
 
   def book_params
-    params.permit(:title, :body, :user_id)
+    params.require(:book).permit(:title, :body)
   end
 
   def is_matching_login_user
