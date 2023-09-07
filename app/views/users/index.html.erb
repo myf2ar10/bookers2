@@ -5,6 +5,9 @@
   <%= flash[:notice] %>
 </div>
 
+  <div class="container">
+    <div class="row">
+
   <% if @book.errors.any? %>
   <%= @book.errors.count %>errors prohibited this book from being saved:
   <ul>
@@ -13,30 +16,30 @@
     <% end %>
   </ul>
   <% end %>
+<p id="notice"></p>
+<%= render 'post_images/list', user: @user, book: @book %>
+<!--<h2>User info</h2>-->
 
 
-<h2>User info</h2>
+<!--  < %= image_tag @user.get_profile_image(100,100) %>-->
 
 
-  <%= image_tag @user.get_profile_image(100,100) %>
+<!--<table class="table">-->
+<!--  <tbody><tr></tr>-->
+<!--  <tr>-->
+<!--	  <th>name</th>-->
+<!--	  <th>< %= @user.name %></th>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--	  <th>introduction</th>-->
+<!--	  <th>< %= @user.introduction %></th>-->
+<!--  </tr>-->
+<!--</tbody></table>-->
 
 
-<table class="table">
-  <tbody><tr></tr>
-  <tr>
-	  <th>name</th>
-	  <th><%= @user.name %></th>
-  </tr>
-  <tr>
-	  <th>introduction</th>
-	  <th><%= @user.introduction %></th>
-  </tr>
-</tbody></table>
-
-
-<%= link_to edit_user_path(@user.id), class: "btn btn-outline-secondary btn-block" do %>
-  <i class="fas fa-user-cog" aria-hidden="true"></i>
-<% end %>
+<!--< %= link_to edit_user_path(@user.id), class: "btn btn-outline-secondary btn-block" do %>-->
+<!--  <i class="fas fa-user-cog" aria-hidden="true"></i>-->
+<!--< % end %>-->
 
 
 
@@ -53,19 +56,19 @@
 <!--  <div class="form-group">-->
 <!--    <input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book">-->
 <!--  </div>-->
-<h2>New book</h2>
-<%= form_with model: @book, url: books_path(@user.id), method: :post do |f| %>
+<!--<h2>New book</h2>-->
+<!--< %= form_with model: @book, url: books_path(@user.id), method: :post do |f| %>-->
   <!--<　%= form_with model: Book.new do |f| %>-->
   <!--<h4>Title</h4>-->
-  <label for="book_title">Title</label><br>
-  <%= f.text_field :title %><br>
+<!--  <label for="book_title">Title</label><br>-->
+<!--  < %= f.text_field :title %><br>-->
 
   <!--<h4>Opinion</h4>-->
-  <label for="book_opinion">Opinion</label><br>
-  <%= f.text_area :body %><br>
+<!--  <label for="book_opinion">Opinion</label><br>-->
+<!--  < %= f.text_area :body %><br>-->
   <!--< %= f.submit 'Create Book' %><br>-->
-  <input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book">
-<% end %>
+<!--  <input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book">-->
+<!--< % end %>-->
 
 
 <div class="col-md-8 offset-md-1">
@@ -95,9 +98,8 @@
 <td><%= user.name %></td>
 
   <td><%= link_to "Show", user_path(user.id) %></td><br>
-
-
 <% end %>
+    </div>
+  </div>
 </div>
-
 
