@@ -21,6 +21,7 @@ class BooksController < ApplicationController
 
   def edit
   is_matching_login_user
+  @book = Book.find(params[:id])
   end
 
   def create

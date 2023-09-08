@@ -1,6 +1,74 @@
 <!--<h1>Books#edit</h1>-->
 <!--<p>Find me in app/views/books/edit.html.erb</p>-->
 
-book edit
-Editing Book
+<!DOCTYPE html>
+<head>
+  <title>Bookers2Ver2</title>
+</head>
+  <body>
+    <main>
+      <p id="notice"></p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
+  		      <h1>Editing Book</h1>
 
+    <%= form_with model:@book, local:true do |f| %>
+  <div class="field row">
+    <%= f.label :Title %>
+    <%= f.text_field :title, class:"form-control book_title" %>
+  </div>
+  <div class="field row">
+    <%= f.label :Opinion %>
+    <%= f.text_area :body, class:"form-control book_body" %>
+  </div><br>
+  <div class="actions row">
+    <%= f.submit class: "btn btn-success col-xs-12" %>
+  </div><br>
+<% end %>
+
+        <div class="link">
+          <%= link_to "Show", book_path(@book.id) %>
+          <%= "  |  " %>
+          <%= link_to "Back", books_path %>
+        </div>
+
+
+          <!--  <div class="form-group">-->
+          <!--    <label for="book_title">Title</label>-->
+          <!--    <input class="form-control book_title" type="text" value="1" name="book[title]" id="book_title">-->
+          <!--  </div>-->
+          <!--  <div class="form-group">-->
+          <!--    <label for="book_opinion">Opinion</label>-->
+          <!--    <textarea class="form-control book_body" name="book[body]" id="book_body">1</textarea>-->
+          <!--  </div>-->
+          <!--  <div class="form-group">-->
+          <!--    <input type="submit" name="commit" value="Update Book" class="btn btn-success" data-disable-with="Update Book">-->
+          <!--  </div>-->
+          <!--  <a class="book_100760" href="/books/100760">Show</a>-->
+          <!--   |-->
+  		      <!--<a class="back" href="/books">Back</a>-->
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+      </div>
+      </main>
+
+<!--こういうかきかた-->
+<!--    < %= form_with model:book, local:true do |f| %>-->
+<!--  <div class="field row">-->
+<!--    < %= f.label :Title %>-->
+<!--    < %= f.text_field :title, class:"form-control book_title" %>-->
+<!--  </div>-->
+<!--  <div class="field row">-->
+<!--    < %= f.label :Opinion %>-->
+<!--    < %= f.text_area :body, class:"form-control book_body" %>-->
+<!--  </div>-->
+<!--  <div class="actions row">-->
+<!--    < %= f.submit class: "btn btn-success col-xs-12" %>-->
+<!--  </div>-->
+<!--< % end %>-->

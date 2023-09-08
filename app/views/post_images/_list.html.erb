@@ -54,15 +54,15 @@
     <h2>New book</h2>
     <%= form_with model:book, local:true do |f| %>
   <div class="field row">
-    <%= f.label :title %>
-    <%= f.text_field :title, class:"col-xs-12" %>
+    <%= f.label :Title %>
+    <%= f.text_field :title, class:"form-control book_title" %>
   </div>
   <div class="field row">
-    <%= f.label :body %>
-    <%= f.text_area :body, class:"col-xs-12" %>
+    <%= f.label :Opinion %>
+    <%= f.text_area :body, class:"form-control book_body" %>
   </div>
   <div class="actions row">
-    <%= f.submit class: "btn btn-primary col-xs-12" %>
+    <%= f.submit class: "btn btn-success col-xs-12" %>
   </div>
 <% end %>
 
