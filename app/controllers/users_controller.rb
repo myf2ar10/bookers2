@@ -19,11 +19,6 @@ class UsersController < ApplicationController
   def edit
   is_matching_login_user
   @user = User.find(params[:id])
-    if @user == current_user
-      render "edit"
-    else
-      redirect_to user_path(current_user)
-    end
   end
 
     # 自分で、新規投稿バリデーション
@@ -39,8 +34,8 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    p params
-    p user_params
+    @user.profile_image.attach(params[:profile_image])
+
     if @user.update(user_params)
       flash[:notice] = "You have updated user successfully."
       redirect_to user_path(@user.id)
