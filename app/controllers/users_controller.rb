@@ -19,6 +19,11 @@ class UsersController < ApplicationController
   def edit
   is_matching_login_user
   @user = User.find(params[:id])
+    if @user == current_user
+      render "edit"
+    else
+      redirect_to user_path(current_user)
+    end
   end
 
     # 自分で、新規投稿バリデーション

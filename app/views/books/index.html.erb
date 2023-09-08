@@ -2,9 +2,8 @@
 <!--<p>Find me in app/views/books/index.html.erb</p>-->
 
 <p id="notice"></p>
-
-  <div class="container">
-    <div class="row">
+<div class="container">
+  <div class="row">
 <%= render 'post_images/list', user: @user, book: @book_new %>
 
 <!--  <div class="container px-5 px-sm-0">-->
@@ -68,31 +67,28 @@
       <!--    		      </table>-->
       <!--</div>-->
 
-
-              <div class="col-md-8 offset-md-1">
-          <table class="table">
-            <h2>Books</h2>
-            <thead>
-              <tr>
-                <th></th>
-                <th>Title</th>
-                <th>Opinion</th>
-                <th colspan="3"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="col-md-8 offset-md-1">
+      <table class="table">
+        <h2>Books</h2>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Title</th>
+            <th>Opinion</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+        <tbody>
           <% @books.each do |book| %>
             <tr>
               <td><%= image_tag book.user.get_profile_image(100,100) %></td>
               <td><%= link_to book.title, book_path(book.id) %></td>
               <td><%= book.body %></td>
-            </tr><br>
+            </tr>
           <% end %>
-        </div>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </div>

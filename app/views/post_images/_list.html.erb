@@ -26,44 +26,39 @@
 <!--  <　%= paginate post_images %>-->
 <!--</div>-->
 
-
-
-
-
-
-
 <!--★＠はずす-->
-      <div class="col-md-3">
-        <h2>User info</h2>
-        <% if user.profile_image.attached? %>
-          <%= image_tag user.profile_image, size: "100x100" %>
-        <% else %>
-          <%= image_tag 'no_image', size: "100x100" %>
-        <% end %>
-          <table class="table">
-            <tbody>
-              <tr></tr>
-              <tr>
-	               <th>name</th>
-	               <th><%= user.name %></th>
-              </tr>
-              <tr>
-	               <th>introduction</th>
-	               <th><%= user.introduction %></th>
-              </tr>
-            </tbody>
-          </table>
-          <%= link_to edit_user_path(user.id), class: "btn btn-outline-secondary btn-block" do %>
-          <i class="fas fa-user-cog" aria-hidden="true"></i>
-          <% end %>
-          <h2>New book</h2>
-            <%= form_with model: book do |f| %>
-              <label for="book_title">Title</label><br>
-              <%= f.text_field :title %><br>
-              <label for="book_opinion">Opinion</label><br>
-              <%= f.text_area :body %><br>
-              <!--<input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book">-->
-               <%= f.submit 'Create Book', class: "btn btn-success" %><br>
-            <% end %>
-            </form>
-      </div>
+<p id="notice"></p>
+  <div class="col-md-3">
+    <h2>User info</h2>
+    <% if user.profile_image.attached? %>
+      <%= image_tag user.profile_image, size: "100x100" %>
+    <% else %>
+      <%= image_tag 'no_image', size: "100x100" %>
+    <% end %>
+    <table class="table">
+      <tbody>
+        <tr></tr>
+        <tr>
+         <th>name</th>
+         <th><%= user.name %></th>
+        </tr>
+        <tr>
+          <th>introduction</th>
+          <th><%= user.introduction %></th>
+        </tr>
+      </tbody>
+    </table>
+    <%= link_to edit_user_path(user.id), class: "btn btn-outline-secondary btn-block" do %>
+      <i class="fas fa-user-cog" aria-hidden="true"></i>
+    <% end %>
+    <h2>New book</h2>
+    <%= form_with model: book do |f| %>
+      <label for="book_title">Title</label><br>
+      <%= f.text_field :title %><br>
+      <label for="book_opinion">Opinion</label><br>
+      <%= f.text_area :body %><br>
+      <!--<input type="submit" name="commit" value="Create Book" class="btn btn-success" data-disable-with="Create Book">-->
+    　<%= f.submit 'Create Book', class: "btn btn-success" %><br>
+      <% end %>
+    </form>
+  </div>
