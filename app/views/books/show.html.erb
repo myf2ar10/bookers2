@@ -64,17 +64,18 @@
 <!--            </form>-->
 <!--      </div>-->
       <div class="col-md-8 offset-md-1">
-  		  <h2>Book detail</h2>
-  		    <table class="table">
-  		      <tbody>
-  		        <tr>
+  		  <table class="table">
+ 		      <h2>Book detail</h2>
+  		    <tbody>
+  		      <tr>
               <td>
-                <% if @user.profile_image.attached? %>
-                  <%= image_tag @user.profile_image, size: "100x100" %><br>
+                <!--< % if @user.profile_image.attached? %>-->
+                  <%= image_tag @user.profile_image, size: "100x100" %>
+                  <br>
                   <%= link_to @user.name, user_path(current_user) %>
-                <% else %>
-                  <%= image_tag 'no_image', size: "100x100" %>
-                <% end %>
+                <!--< % else %>-->
+                  <!--< %= image_tag 'no_image', size: "100x100" %>-->
+                <!--< % end %>-->
               </td>
               <td><%= link_to @book.title, book_path(@book) %></td>
               <td><%= @book.body %></td>
@@ -88,9 +89,9 @@
                   <%= link_to 'Destroy', book_path(@book), method: :delete, data: { confirm: '本当に消しますか？' }, class: "btn btn-sm btn-danger" %>
                 <% end %>
               </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+  </div>

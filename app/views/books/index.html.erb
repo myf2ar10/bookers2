@@ -1,6 +1,8 @@
 <!--<h1>Books#index</h1>-->
 <!--<p>Find me in app/views/books/index.html.erb</p>-->
-
+<div>
+  <%= flash[:notice] %>
+</div><!--みてもらう-->
 <p id="notice"></p>
 <div class="container">
   <div class="row">
@@ -81,7 +83,12 @@
         <tbody>
           <% @books.each do |book| %>
             <tr>
-              <td><%= image_tag book.user.profile_image, size: "100x100" %></td>
+              <!--<td>< %= image_tag book.user.profile_image, size: "100x100" %></td>-->
+              <td>
+                <%= link_to user_path(book.user.id) do %>
+                  <%= image_tag book.user.get_profile_image(100,100) %>
+                <% end %>
+              </td>
                 <!--<　% if @user.profile_image.attached? %>-->
                 <!--<　% else %>-->
                   <!--<　%= image_tag 'no_image', size: "100x100" %>-->
