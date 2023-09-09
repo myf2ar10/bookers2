@@ -34,7 +34,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    @user.profile_image.attach(params[:profile_image])
+    # @user.profile_image.attach(params[:profile_image])コメントアウトしておく
 
     if @user.update(user_params)
       flash[:notice] = "You have updated user successfully."
@@ -48,7 +48,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :introduction)
+    params.require(:user).permit(:name, :introduction, :profile_image)
   end
 
   def is_matching_login_user
