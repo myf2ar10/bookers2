@@ -22,6 +22,20 @@ class BooksController < ApplicationController
   def edit
   is_matching_login_user
   @book = Book.find(params[:id])
+
+
+
+
+
+        # if @book.user == current_user #webより
+        #   render "edit"
+        # else
+        #   redirect_to books_path
+        # end
+
+
+
+
   end
 
   def create
@@ -34,7 +48,7 @@ class BooksController < ApplicationController
       @books = Book.all
       @user = User.find(current_user.id)
       # (params[:user_id])
-      render template: "users/show"
+      render template: "books/index"
     end
   end
 
@@ -48,7 +62,7 @@ class BooksController < ApplicationController
     else
       @books = Book.all
       @user = User.find(current_user.id)
-      render template: "users/show"
+      render template: "books/edit"
     end
   end
 
@@ -67,7 +81,7 @@ class BooksController < ApplicationController
   def is_matching_login_user
     @book = Book.find(params[:id])
     unless @book.user == current_user
-      redirect_to user_path(current_user)
+      redirect_to books_path
     end
   end
 end
